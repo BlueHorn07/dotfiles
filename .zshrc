@@ -119,3 +119,6 @@ source $ZSH/oh-my-zsh.sh
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/seokyunha/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+alias k="kubectl"
+alias kgp="kubectl get pods"
