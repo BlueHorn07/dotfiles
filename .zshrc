@@ -82,6 +82,8 @@ plugins=(
   git
   zsh-syntax-highlighting
   zsh-autosuggestions
+  dotenv
+  kube-ps1
   fzf
 )
 
@@ -120,5 +122,23 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/Users/seokyunha/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
+alias g=git
 alias k="kubectl"
 alias kgp="kubectl get pods"
+alias kg="kubectl get"
+
+source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
+
+PROMPT='%{$fg[yellow]%}[%D %D{%H:%M:%S}] $(kube_ps1) '$PROMPT
+
+# Created by `pipx` on 2025-06-15 02:15:13
+export PATH="$PATH:/Users/seokyunha/.local/bin"
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+
+# Android Stuiod
+export ANDROID_HOME=/Users/seokyunha/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
