@@ -122,12 +122,13 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/Users/seokyunha/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
-alias g=git
+alias g="git"
+alias c="clear"
 alias k="kubectl"
 alias kgp="kubectl get pods"
 alias kg="kubectl get"
+alias python="python3"
 alias pip="pip3"
-alias c="clear"
 
 source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
 

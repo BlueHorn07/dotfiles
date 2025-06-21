@@ -13,9 +13,14 @@ ln -s "$(pwd)/.vimrc" ~/.vimrc
 ```bash
 brew install gh
 brew install typos-cli
-brew install pipx
 
-brew install kube_ps1
+# Virtual Environments
+brew install pipx
+brew install nvm
+brew install rbenv
+
+# Kubernetes
 brew install k9s
 brew install kubectx
+brew install kube_ps1
 ```
