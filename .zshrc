@@ -126,14 +126,18 @@ alias g=git
 alias k="kubectl"
 alias kgp="kubectl get pods"
 alias kg="kubectl get"
+alias pip="pip3"
+alias c="clear"
 
 source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
 
 PROMPT='%{$fg[yellow]%}[%D %D{%H:%M:%S}] $(kube_ps1) '$PROMPT
 
+# OpenJDK (brew)
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+
 # Created by `pipx` on 2025-06-15 02:15:13
 export PATH="$PATH:/Users/seokyunha/.local/bin"
-export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 
 # Android Stuiod
 export ANDROID_HOME=/Users/seokyunha/Library/Android/sdk
