@@ -14,6 +14,8 @@ ln -s "$(pwd)/.vimrc" ~/.vimrc
 brew install gh
 brew install typos-cli
 brew install mysql-client
+brew install fzf
+brew install gradle
 
 # Virtual Environments
 brew install pipx
@@ -25,6 +27,7 @@ brew install direnv
 brew install k9s
 brew install kubectx
 brew install kube_ps1
+brew install istioctl
 ```
 
 ## Mac Applications
