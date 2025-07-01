@@ -15,18 +15,20 @@ brew install gh
 brew install typos-cli
 brew install mysql-client
 brew install fzf
-brew install gradle
+brew install tree
 
-# Virtual Environments
+# Development & Virtual Environments
 brew install pipx
 brew install nvm
 brew install rbenv
 brew install direnv
+brew install gradle
+brew install pkc-config  # C/C++ linking tool
 
 # Kubernetes
 brew install k9s
-brew install kubectx
-brew install kube_ps1
+brew install kubectx  # kubens도 포함됨
+brew install kube_ps1  # CLI UI enhancement
 brew install istioctl
 ```
 
@@ -39,3 +41,6 @@ brew install istioctl
 - [Clocker](https://github.com/n0shake/clocker)
   - 메뉴바에 세계 시간 표시
 - [Rancher Desktop](https://rancherdesktop.io/)
+  - 로컬에서 Kubernetes & Docker 환경 구축
+- [Terminus](https://termius.com/)
+  - SSH 접속 관리
