@@ -124,9 +124,10 @@ export PATH="/Users/seokyunha/.rd/bin:$PATH"
 
 alias g="git"
 alias c="clear"
-alias k="kubectl"
-alias kgp="kubectl get pods"
-alias kg="kubectl get"
+alias kubectl="kubecolor"
+alias k="kubecolor"
+alias kgp="kubecolor get pods"
+alias kg="kubecolor get"
 alias python="python3"
 alias pip="pip3"
 
@@ -147,3 +148,6 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
+# Kubernetew Krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"

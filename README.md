@@ -16,8 +16,10 @@ brew install typos-cli
 brew install mysql-client
 brew install fzf
 brew install tree
+brew install kubecolor
 
 # Development & Virtual Environments
+brew install openssl@3
 brew install pipx
 brew install nvm
 brew install rbenv
@@ -31,6 +33,15 @@ brew install kubectx  # kubens도 포함됨
 brew install kube_ps1  # CLI UI enhancement
 brew install istioctl
 ```
+
+## Kubernetes Krew
+
+https://krew.sigs.k8s.io/docs/user-guide/setup/install/
+
+```bash
+$ kubectl krew
+```
+
 
 ## Mac Applications
 
