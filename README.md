@@ -39,7 +39,9 @@ brew install istioctl
 https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 
 ```bash
-$ kubectl krew
+$ kubectl krew install view-secret
+$ kubectl krew install df-pv
+$ kubectl krew install neat
 ```
 
 
