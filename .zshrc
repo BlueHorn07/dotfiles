@@ -151,3 +151,5 @@ export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
 # Kubernetew Krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+eval "$(direnv hook zsh)"
