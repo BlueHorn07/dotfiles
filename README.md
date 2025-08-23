@@ -8,6 +8,17 @@ Collection of my `vim`, `zshell`, and `brew` configurations.
 ln -s "$(pwd)/.vimrc" ~/.vimrc
 ```
 
+## Oh-my-zsh
+
+[omz Cheet Sheet](https://kapeli.com/cheat_sheets/Oh-My-Zsh_Git.docset/Contents/Resources/Documents/index)
+
+- `g`
+- `gp`
+- `gcm`
+  - I love this! Very useful!!!
+- `gco`
+
+
 ## Brew Installs
 
 ```bash
