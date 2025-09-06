@@ -8,7 +8,18 @@ Collection of my `vim`, `zshell`, and `brew` configurations.
 ln -s "$(pwd)/.vimrc" ~/.vimrc
 ```
 
+## iTerm2
+
+```bash
+brew install iterm2
+```
+
 ## Oh-my-zsh
+
+```bash
+brea install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
 [omz Cheet Sheet](https://kapeli.com/cheat_sheets/Oh-My-Zsh_Git.docset/Contents/Resources/Documents/index)
 
@@ -18,6 +29,15 @@ ln -s "$(pwd)/.vimrc" ~/.vimrc
   - I love this! Very useful!!!
 - `gco`
 
+```bash
+# zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
+  ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions \
+  ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
 
 ## Brew Installs
 
@@ -41,8 +61,18 @@ brew install pkc-config  # C/C++ linking tool
 # Kubernetes
 brew install k9s
 brew install kubectx  # kubens도 포함됨
-brew install kube_ps1  # CLI UI enhancement
+brew install kube-ps1  # CLI UI enhancement
 brew install istioctl
+
+# Docker
+brew install colima
+```
+
+## Git
+
+```bash
+git config --global user.name "bluehorn07"
+git config --global user.email "bluehornblues@gmail.com"
 ```
 
 ## Kubernetes Krew
@@ -54,6 +84,10 @@ $ kubectl krew install view-secret
 $ kubectl krew install df-pv
 $ kubectl krew install neat
 ```
+
+## AWS CLI
+
+https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/getting-started-install.html
 
 
 ## Mac Applications
@@ -68,3 +102,8 @@ $ kubectl krew install neat
   - 로컬에서 Kubernetes & Docker 환경 구축
 - [Terminus](https://termius.com/)
   - SSH 접속 관리
+
+## Keyboard
+
+- Karabiner-Elements 세팅
+- [원화(₩) 대신 백틱(`) 입력되게 하기](https://www.korecmblog.com/blog/backtick-fix)
