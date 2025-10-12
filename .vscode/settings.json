@@ -1,20 +1,18 @@
 {
-    "git.blame.statusBarItem.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 2,
+    "files.associations": {
+        "*.sql": "jinja-sql",
+        "*.yaml": "jinja-yaml",
+        "*.yml": "jinja-yaml"
+    },
+    "files.trimTrailingWhitespace": true,
+    "git.autofetch": true,
     "git.blame.editorDecoration.enabled": true,
+    "git.blame.statusBarItem.enabled": true,
     "git.confirmSync": false,
     "git.openRepositoryInParentFolders": "always",
-
     "workbench.colorTheme": "Default Dark Modern",
-    "workbench.iconTheme": "material-icon-theme",
-
-    "editor.renderWhitespace": "all",
-
-	  "diffEditor.ignoreTrimWhitespace": false,
-
-    "files.trimTrailingWhitespace": true,
-    "files.associations": {
-		    "*.yaml": "jinja-yaml",
-		    "*.yml": "jinja-yaml",
-		    "*.sql": "jinja-sql"
-    }
+    "workbench.iconTheme": "material-icon-theme"
 }

@@ -75,6 +75,14 @@ git config --global user.name "bluehorn07"
 git config --global user.email "bluehornblues@gmail.com"
 ```
 
+## Helm Plugins
+
+- [helm-diff](https://github.com/databus23/helm-diff)
+
+```bash
+helm plugin install https://github.com/databus23/helm-diff
+```
+
 ## Kubernetes Krew
 
 https://krew.sigs.k8s.io/docs/user-guide/setup/install/
@@ -83,6 +91,31 @@ https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 $ kubectl krew install view-secret
 $ kubectl krew install df-pv
 $ kubectl krew install neat
+```
+
+## Java
+
+```bash
+brew install openjdk@17
+```
+
+`gradle`, `java`까지 모두 설치됨. `$JAVA_HOME` 세팅 추가로 필요함.
+그래야 vscode의 Java Extension에서 제대로 인식 가능함.
+
+
+`~/.zshrc` 파일에 아래 내용 추가 해야 함.
+
+```bash
+# Java 17 (Homebrew)
+export JAVA_HOME=/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home
+export PATH="$JAVA_HOME/bin:$PATH"
+```
+
+그리고 `gradle.properties` 파일 생성해서 아래와 같이 작성
+
+```ini
+# Homebrew로 설치한 Java 17 경로를 명시적으로 지정
+org.gradle.java.installations.paths=/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home
 ```
 
 ## AWS CLI
