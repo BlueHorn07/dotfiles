@@ -140,3 +140,18 @@ https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/getting-started-install.h
 
 - Karabiner-Elements 세팅
 - [원화(₩) 대신 백틱(`) 입력되게 하기](https://www.korecmblog.com/blog/backtick-fix)
+
+# iTerm2
+
+- 단어, 라인 단위 이동
+  - vscode에서 사용하는 키 매핑을 그대로 `iTerm2`에 적용하는 방법 입니다.
+  - `iTmer2` → `Settings` → `Profiles` → `Keys` 탭 → `Key Bindings`
+  - 하당 `+` 버튼 클릭해서 새로운 키 매핑 추가
+  - 아래 네 항목을 추가하거나
+    - `⌥ + →` + Send Escape Sequence + `b`(send text)
+    - `⌥ + ←` + Send Escape Sequence + `f`(send text)
+    - `⌘ + →` + Send Hex Code + `0x05`(Hex Code)
+    - `⌘ + ←` + Send Hex Code + `0x01`(Hex Code)
+  - `Natural Text Editing`으로 추가
+  - 열려 있는 세션을 닫고 세션 새로 시작
+
