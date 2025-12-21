@@ -39,7 +39,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions \
   ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-## Brew Installs
+## Homebrew
 
 `brew leaves`로 내가 직접 설치한 brew 패키지만 확인 가능 (의존성 제외).
 단, 내가 직접 설치 했더라도, 나중에 다른 패키지가 의존하게 된다면 `brew leaves` 목록에서 안 보이게 됨.
@@ -49,14 +49,16 @@ brew install gh
 brew install typos-cli
 brew install fzf
 brew install tree
+brew install pre-commit
 
 # Development & Virtual Environments
 brew install mysql-client
 brew install openssl@3
-brew install pipx
+brew install pipx  # Python 기반 CLI 설치 용도
 brew install nvm
 brew install rbenv
 brew install jenv
+brew install maven
 brew install direnv
 brew install gradle
 brew install pkc-config  # C/C++ linking tool
@@ -75,6 +77,18 @@ brew install colima
 brew install figlet  # 터미널 ASCII 아트
 brew install lolcat  # 터미널 rainbow 출력
 ```
+
+### brew commands
+
+- `brew leaves`
+  - 내가 직접 설치한 것들만 확인
+  - 정확히는 의존성 없는 리프 노드 패키지만 보여주는 명령어
+  - 그래서 처음엔 내가 직접 설치 했지만, 이후에 다른 패키지에서 그 패키지를 의존하게 되면 `brew leaves` 목록에서 안 보임.
+- `brew deps --tree {PKC_NAME}`
+  - 해당 패키지에서 사용하는 하위 패키지를 확인
+- `brew uses --installed {PKC_NAME}`
+  - 해당 패키지를 사용하는 상위 패키지를 확인
+
 
 ## Git
 
@@ -107,7 +121,7 @@ $ kubectl krew install neat
 brew install openjdk@17
 ```
 
-`gradle`, `java`까지 모두 설치됨. `$JAVA_HOME` 세팅 추가로 필요함.
+`gradle`, `java` 둘다 설치됨. `$JAVA_HOME` 세팅 추가로 필요함.
 그래야 vscode의 Java Extension에서 제대로 인식 가능함.
 
 
@@ -125,6 +139,18 @@ export PATH="$JAVA_HOME/bin:$PATH"
 # Homebrew로 설치한 Java 17 경로를 명시적으로 지정
 org.gradle.java.installations.paths=/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home
 ```
+
+## jenv 세팅
+
+디렉토리 별로 사용하는 java 버전을 세팅할 수 있는 도구
+
+[이 포스팅](https://velog.io/@geun/Setting-jenv%EB%A1%9C-%EC%97%AC%EB%9F%AC-Java-%EB%B2%84%EC%A0%84-%EC%82%AC%EC%9A%A9%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0-For-Mac-g20bsd7e) 참고해서 진행할 것 (단, symlink 부분은 불필요.)
+
+지금까지 설치한 openjdk 목록
+
+- `openjdk@11`
+- `openjdk@17`
+- `openjdk@21`
 
 ## AWS CLI
 
