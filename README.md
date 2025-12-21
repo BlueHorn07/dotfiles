@@ -26,7 +26,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 - `g`
 - `gp`
 - `gcm`
-  - I love this! Very useful!!!
+  - I love this! 💞
 - `gco`
 
 ```bash
@@ -41,31 +41,39 @@ git clone https://github.com/zsh-users/zsh-autosuggestions \
 
 ## Brew Installs
 
+`brew leaves`로 내가 직접 설치한 brew 패키지만 확인 가능 (의존성 제외).
+단, 내가 직접 설치 했더라도, 나중에 다른 패키지가 의존하게 된다면 `brew leaves` 목록에서 안 보이게 됨.
+
 ```bash
 brew install gh
 brew install typos-cli
-brew install mysql-client
 brew install fzf
 brew install tree
-brew install kubecolor
 
 # Development & Virtual Environments
+brew install mysql-client
 brew install openssl@3
 brew install pipx
 brew install nvm
 brew install rbenv
+brew install jenv
 brew install direnv
 brew install gradle
 brew install pkc-config  # C/C++ linking tool
 
 # Kubernetes
 brew install k9s
-brew install kubectx  # kubens도 포함됨
+brew install kubecolor
+brew install kubectx   # kubens도 포함됨
 brew install kube-ps1  # CLI UI enhancement
 brew install istioctl
 
 # Docker
 brew install colima
+
+# for Fun!
+brew install figlet  # 터미널 ASCII 아트
+brew install lolcat  # 터미널 rainbow 출력
 ```
 
 ## Git
