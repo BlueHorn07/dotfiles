@@ -39,6 +39,14 @@ git clone https://github.com/zsh-users/zsh-autosuggestions \
   ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
+## git
+
+- `git gone`
+  - https://news.hada.io/topic?id=7933
+- `gcmp`
+  - git checkout $(git_main_branch) && git pull
+
+
 ## Homebrew
 
 `brew leaves`로 내가 직접 설치한 brew 패키지만 확인 가능 (의존성 제외).
