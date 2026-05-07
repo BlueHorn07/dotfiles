@@ -1,18 +1,23 @@
 {
     "diffEditor.ignoreTrimWhitespace": false,
+
     "editor.renderWhitespace": "all",
     "editor.tabSize": 2,
-    "files.associations": {
-        "*.sql": "jinja-sql",
-        "*.yaml": "jinja-yaml",
-        "*.yml": "jinja-yaml"
-    },
+
     "files.trimTrailingWhitespace": true,
+
     "git.autofetch": true,
     "git.blame.editorDecoration.enabled": true,
     "git.blame.statusBarItem.enabled": true,
     "git.confirmSync": false,
     "git.openRepositoryInParentFolders": "always",
-    "workbench.colorTheme": "Default Dark Modern",
+
+    // 규모 큰 모노레포 Java 프로젝트 열 때, autobuild 때문에 맥북이 부하 엄청 받음;;
+    "java.compile.nullAnalysis.mode": "disabled",
+    "java.server.launchMode": "LightWeight",
+    "java.import.maven.enabled": false,
+    "java.import.gradle.enabled": false,
+
+    "workbench.colorTheme": "Dark Modern",
     "workbench.iconTheme": "material-icon-theme"
 }
