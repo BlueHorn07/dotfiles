@@ -177,6 +177,8 @@ https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/getting-started-install.h
   - 로컬에서 Kubernetes & Docker 환경 구축
 - [Terminus](https://termius.com/)
   - SSH 접속 관리
+- [RayCast](https://www.raycast.com/)
+  - 맥 Spotlight & 단축키 매핑
 
 ## Keyboard
 
